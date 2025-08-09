@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOME</title>
+        <link rel='stylesheet' href='static/style.css'>
+    </head> 
+    <body>
+        <div class="hero">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="{{url_for('static',filename='imgs/bg_video.mp4')}}" type="video/mp4">
+            </video>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>    
+            </nav>
+            <div class="content">
+                <div class="wrapper">
+                    <div class="typing">
+                        <h4>Welcome to our ckd predictor!</h4>
+                    </div>
+                </div> 
+                <a href="/prediction">Predict</a>
+            </div>
+        </div>
+    </body>   
+<html>    

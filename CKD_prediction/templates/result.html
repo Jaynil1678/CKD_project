@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICTION</title>
+    <link rel='stylesheet' href='static/style.css'>
+</head>
+<body>
+        <div class="hero">
+            <img src="/static/imgs/k_background.png" class="back-video">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>    
+            </nav>
+        </div>     
+        <div class="result-video">
+            {% if prediction_status=='positive' %}
+                <h1 class="ckd-text">Prediction:Based on your results,there is a high risk for Chronic Kidney Disease! Please kindly visit the Hospital.</h1>
+            {% elif prediction_status=='negative' %}    
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="{{url_for('static',filename='imgs/no_ckd.mp4')}}" type="video/mp4"></video>
+                    <h1 class="no-ckd-text">Prediction:Great! You Don't have Chronic Kidney Disease.</h1>
+                
+            {% else%}    
+                <h1>Something went wrong!!!</h1>
+            {% endif %}
+        </div>    
+</body>   
+</html>
