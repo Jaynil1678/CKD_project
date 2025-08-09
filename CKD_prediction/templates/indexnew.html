@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel='stylesheet' href='static/style.css'>
+</head>
+<body>
+    <div class="hero">
+
+      <img src="/static/imgs/k_background.png" class="back-video">
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>    
+        </nav>
+
+        <form class="form" action='/predict' method="POST">
+            <input type="number" id="blood_urea" name="blood_urea" placeholder="Enter your blood urea" required><br>
+
+            <input type="number" id="blood_glucose_random" name="blood_glucose_random" placeholder="Enter your blood glucose random" required><br>
+            
+      
+            <select name="anemia" id="anemia" required>
+              <option value="">Select Anemia (YES/NO)</option>
+              <option value="YES">YES</option>
+              <option value="NO">NO</option>
+            </select><br>
+
+            <select name="coronary_artery_disease" id="coronary_artery_disease" required>
+              <option value="">Select Coronary artery disease (YES/NO)</option>
+              <option value="YES">YES</option>
+              <option value="NO">NO</option>
+            </select><br>
+
+            <select name="pus_cell" id="pus_cell" required>
+              <option value="">Select Pus_cell (Normal/Abnormal)</option>
+              <option value="YES">Normal</option>
+              <option value="NO">Abnormal</option>
+            </select><br>
+
+            <select name="red_blood_cells" id="red_blood_cells" required>
+              <option value="">Select Red blood cell level (Normal/Abnormal)</option>
+              <option value="YES">Normal</option>
+              <option value="NO">Abnormal</option>
+            </select><br>
+
+            <select name="diabetesmellitus" id="diabetesmellitus" required>
+              <option value="">Select Diabetesmellitus (YES/NO)</option>
+              <option value="YES">YES</option>
+              <option value="NO">NO</option>
+            </select><br>
+
+            <select name="pedal_edema" id="pedal_edema" required>
+              <option value="">Select Pedal edema (YES/NO)</option>
+              <option value="YES">YES</option>
+              <option value="NO">NO</option>
+            </select><br>
+            
+            <input type="submit" value="Predict" class="submit">
+        </form>
+    </div>
+</body>
+</html>

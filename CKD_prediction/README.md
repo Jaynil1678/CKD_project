@@ -1,4 +1,5 @@
 # CKD_project
+
 # Chronic Kidney Disease (CKD) Prediction
 
 A web application that predicts the risk of Chronic Kidney Disease based on a user's health metrics. This tool is designed to provide an accessible and preliminary assessment for informational purposes and to promote early health awareness.
