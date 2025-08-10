@@ -1,4 +1,5 @@
 # CKD_project
+
 # Chronic Kidney Disease (CKD) Prediction
 
 A web application that predicts the risk of Chronic Kidney Disease based on a user's health metrics. This tool is designed to provide an accessible and preliminary assessment for informational purposes and to promote early health awareness.
@@ -20,7 +21,6 @@ A web application that predicts the risk of Chronic Kidney Disease based on a us
   * *Flask:* A lightweight web framework used to build the web application.
   * *Pandas:* For data cleaning, preprocessing, and manipulation.
   * *scikit-learn:* For building and training the Logistic Regression model.
-  * *imbalanced-learn:* To handle the class imbalance in the dataset using SMOTE.
   * *HTML/CSS:* For the front-end user interface.
 
 -----
